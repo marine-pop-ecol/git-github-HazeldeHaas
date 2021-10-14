@@ -1,0 +1,33 @@
+---
+title: "Untitled"
+author: "Hazel de Haas"
+date: "14/10/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Hazel de Haas
+**UVIC**
+*Blue*
+
+```{r}
+library(here)
+library(tidyverse)
+```
+
+
+```{r}
+x = c(1,2,3)
+y = c(3,4,5)
+```
+
+```{r}
+data = data.frame(x,y)
+```
+
+```{r}
+write.csv(data, here("student-data.csv"))
+```
